@@ -1,2 +1,2 @@
-export declare const createMnemonic: () => any;
+export * from "./createMnemonic";
 //# sourceMappingURL=index.d.ts.map
