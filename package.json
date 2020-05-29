@@ -15,6 +15,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/bitcore-lib": "^0.15.1",
     "@types/node": "^14.0.5",
     "nodemon": "^2.0.4",
     "pre-commit": "^1.2.2",
@@ -22,6 +23,7 @@
     "typescript": "^3.9.3"
   },
   "dependencies": {
+    "bitcore-lib": "^8.20.3",
     "expo-random": "^8.1.0"
   }
 }
