@@ -1,7 +1,5 @@
 .serverless
 
-dist
-
 *.csv
 
 # Logs

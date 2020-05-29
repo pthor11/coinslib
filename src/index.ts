@@ -1,4 +1,4 @@
-const Mnemonic = require("bitcore-mnemonic");
+const Mnemonic = require ("bitcore-mnemonic");
 
 export const createMnemonic = () => {
     const code = new Mnemonic(256, Mnemonic.Words.ENGLISH)

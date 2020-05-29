@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "nodemon --watch 'src/**/*.ts' --exec ts-node src/index.ts",
     "build": "rm -rf dist && tsc",
-    "start": "node dist/index.js",
-    "preinstall": "yarn build"
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
