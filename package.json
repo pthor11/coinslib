@@ -17,5 +17,8 @@
     "nodemon": "^2.0.4",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "bitcore-mnemonic": "^8.20.3"
   }
 }
