@@ -1,3 +1,10 @@
+// import { mnemonicToSeed } from "bip39"
+// import { bip32, payments } from "bitcoinjs-lib"
+// import bchaddr from "bchaddrjs";
+// import { privateToAddress } from "ethereumjs-util";
+// import tronweb from "tronweb";
+// import coinlist from './lib/coinlist'
+
 import { crypto } from "bitcore-lib";
 
 export const mnemonicToSeedHex = (array: string[]) => crypto.Hash.sha256(Buffer.from(array.join(' '))).toString('hex') 
