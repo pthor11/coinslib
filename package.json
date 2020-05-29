@@ -8,12 +8,16 @@
     "build": "rm -rf dist && tsc",
     "start": "node dist/index.js"
   },
+  "pre-commit": [
+    "build"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^14.0.5",
     "nodemon": "^2.0.4",
+    "pre-commit": "^1.2.2",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.3"
   },
