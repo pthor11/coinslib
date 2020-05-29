@@ -22,6 +22,5 @@
     "typescript": "^3.9.3"
   },
   "dependencies": {
-    "bitcore-mnemonic": "^8.20.3"
   }
 }
