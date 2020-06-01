@@ -1,7 +1,2 @@
-import { createMnemonic } from "./createMnemonic"
-import { mnemonicToSeedHex } from "./createKeyPair"
-
-export {
-    createMnemonic,
-    mnemonicToSeedHex
-}
+export * from "./createMnemonic"
+export * from "./createKeyPair"
