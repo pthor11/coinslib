@@ -1,10 +1,4 @@
 "use strict";
-// import { mnemonicToSeed } from "bip39"
-// import { bip32, payments } from "bitcoinjs-lib"
-// import bchaddr from "bchaddrjs";
-// import { privateToAddress } from "ethereumjs-util";
-// import tronweb from "tronweb";
-// import coinlist from './lib/coinlist'
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.mnemonicToSeedHex = void 0;
 const bitcore_lib_1 = require("bitcore-lib");
