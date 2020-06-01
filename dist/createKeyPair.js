@@ -1,8 +1,25 @@
 "use strict";
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.mnemonicToSeedHex = void 0;
-const bitcore_lib_1 = require("bitcore-lib");
-exports.mnemonicToSeedHex = (array) => bitcore_lib_1.crypto.Hash.sha256(Buffer.from(array.join(' '))).toString('hex');
+const bip39_1 = require("bip39");
+exports.mnemonicToSeedHex = (array) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const seed = yield bip39_1.mnemonicToSeed(array.join(' '));
+        return seed.toString('hex');
+    }
+    catch (e) {
+        throw e;
+    }
+});
 // const seedHexToKeyPair = async ({ seedHex, coin, index }) => {
 //     const coin_id = coinlist[coin].id
 //     const network = coinlist[coin].network
