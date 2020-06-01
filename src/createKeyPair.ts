@@ -1,6 +1,13 @@
-import { crypto } from "bitcore-lib";
+import { mnemonicToSeed } from "bip39";
 
-export const mnemonicToSeedHex = (array: string[]) => crypto.Hash.sha256(Buffer.from(array.join(' '))).toString('hex') 
+export const mnemonicToSeedHex = async (array: string[]) => {
+    try {
+        const seed: Buffer = await mnemonicToSeed(array.join(' '))
+        return seed.toString('hex')
+    } catch (e) {
+        throw e
+    }
+}
 
 
 // const seedHexToKeyPair = async ({ seedHex, coin, index }) => {
